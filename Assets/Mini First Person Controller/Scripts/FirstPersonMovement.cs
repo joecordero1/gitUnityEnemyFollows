@@ -6,7 +6,6 @@ public class FirstPersonMovement : MonoBehaviour
     public float speed = 5;
     public int health = 100;
     public int currentHealth;
-    [SerializeField] private HealthScript _healthbar;
 
     [Header("Running")]
     public bool canRun = true;
@@ -25,10 +24,6 @@ public class FirstPersonMovement : MonoBehaviour
     {
         // Get the rigidbody on this.
         rigidbody = GetComponent<Rigidbody>();
-        /*
-        currentHealth = health;
-        _healthbar.UpdateHealthbar(health,currentHealth);
-        */
     }
 
     void FixedUpdate()
